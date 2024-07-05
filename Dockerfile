@@ -1,5 +1,5 @@
 FROM ubuntu:xenial-20170410
-
+USER root
 
 ENV WEBDAV_USERNAME="Test" 
 ENV WEBDAV_PASSWORD="Test"
