@@ -7,7 +7,7 @@ RUN apt-get update \
  && rm -rf /var/lib/apt/lists/*
 
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
-RUN cchmod -R 7777  /var /run
+RUN chmod -R 7777  /var /run
 VOLUME /media
 
 COPY entrypoint.sh /
