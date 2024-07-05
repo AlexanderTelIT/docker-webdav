@@ -13,6 +13,6 @@ if [ -n "${UID:-}" ]; then
     gosu $UID mkdir -p /media/.tmp
     exec gosu $UID "$@"
 else
-    mkdir -p /media/.tmp
+   
     exec "$@"
 fi
