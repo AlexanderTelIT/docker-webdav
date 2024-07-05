@@ -17,7 +17,7 @@ COPY entrypoint.sh /
 COPY nginx.conf /etc/nginx/
 RUN chmod -R 7777 /etc/
 RUN chmod -R 7777 /etc/nginx
-RUN  mkdir /media
+
 RUN chmod -R 7777 /media
 
 ENTRYPOINT ["/entrypoint.sh"]
