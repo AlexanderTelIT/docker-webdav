@@ -1,5 +1,8 @@
 FROM ubuntu:xenial-20170410
 
+
+ENV WEBDAV_USERNAME="Test" 
+ENV WEBDAV_PASSWORD="Test"
 ARG http_proxy
 ARG https_proxy
 RUN apt-get update \
